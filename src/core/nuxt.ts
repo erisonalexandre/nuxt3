@@ -29,7 +29,7 @@ export function createNuxt (options: NuxtOptions): Nuxt {
   return nuxt
 }
 
-async function initNuxt (nuxt: Nuxt) {
+async function initNuxt (nuxt: any) {
   // Register user hooks
   nuxt.hooks.addHooks(nuxt.options.hooks)
 
